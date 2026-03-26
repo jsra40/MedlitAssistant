@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MedLit Assistant</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 40px;
+      background-color: #f9f9f9;
+    }
+    h1 {
+      color: #2c3e50;
+    }
+    p {
+      color: #555;
+      max-width: 600px;
+    }
+  </style>
+</head>
+<body>
+  <h1>MedLit Assistant</h1>
+  <p>
+    This chatbot supports our ontology-driven medical literature project. 
+    You can ask about symptoms, treatments, studies, patient groups, and clusters 
+    for different medical conditions such as PCOS, diabetes, thyroid disorders, osteoporosis, and pituitary adenomas.
+  </p>
+
+  <!-- Dialogflow Messenger -->
+  <script src="https://www.gstatic.com/dialogflow-console/fast/messenger/bootstrap.js?v=1"></script>
+  <df-messenger
+    intent="WELCOME"
+    chat-title="MedLitAssistant"
+    agent-id="2305deb2-0aec-4d77-99d9-6e0e869e9253"
+    language-code="en"
+  ></df-messenger>
+
+</body>
+</html>
